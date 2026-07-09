@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SAPCAS desarrolla APIs, automatizaciones y soluciones de datos para empresas industriales B2B: Shopify, ERPs, cuadernos de carga, catálogos técnicos y procesos comerciales." />
+  <title>SAPCAS | APIs y automatización para industria B2B</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            darkBg: '#07111f',
+            primary: '#1e3a8a',
+            primarySoft: '#dbeafe',
+            steel: '#0f172a',
+            accent: '#38bdf8',
+            industrial: '#f59e0b'
+          },
+          boxShadow: {
+            'soft-glow': '0 0 40px rgba(56,189,248,0.16)',
+            'white-glow': '0 0 10px rgba(255,255,255,0.18)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-slate-900 dark:bg-darkBg dark:text-white transition-colors duration-300">
+
+  <header class="fixed top-0 w-full z-50 border-b border-slate-200/70 bg-white/90 shadow-sm backdrop-blur dark:border-white/10 dark:bg-darkBg/90 dark:shadow-white-glow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center gap-4">
+      <a href="#inicio" class="flex items-center gap-2 text-xl font-extrabold tracking-tight" aria-label="SAPCAS inicio">
+        <span class="bg-primary text-white px-2.5 py-1 rounded-lg">SAPCAS</span>
+        <span class="hidden sm:inline text-slate-900 dark:text-white">Industrial Automation</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#problema" class="hover:text-primary dark:hover:text-accent">Problema</a>
+        <a href="#soluciones" class="hover:text-primary dark:hover:text-accent">Soluciones</a>
+        <a href="#proceso" class="hover:text-primary dark:hover:text-accent">Proceso</a>
+        <a href="#tecnologia" class="hover:text-primary dark:hover:text-accent">Tecnología</a>
+        <a href="#contacto" class="hover:text-primary dark:hover:text-accent">Contacto</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#contacto" class="hidden sm:inline-flex rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white shadow hover:bg-blue-800 transition">Solicitar diagnóstico</a>
+        <button id="theme-toggle" aria-label="Cambiar modo claro u oscuro" class="relative w-14 h-8 bg-slate-200 dark:bg-slate-700 rounded-full p-1 flex items-center justify-center transition-colors duration-300">
+          <span class="text-yellow-400 text-lg transition-opacity duration-300 pr-2">☼</span>
+          <span class="text-slate-800 dark:text-slate-200 text-lg transition-opacity duration-300">☾</span>
+          <div id="theme-toggle-thumb" class="absolute top-1 left-1 w-6 h-6 bg-white dark:bg-slate-200 rounded-full shadow-md transform transition-transform duration-300"></div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio" class="pt-20">
+    <section class="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-blue-50 dark:from-darkBg dark:via-slate-950 dark:to-slate-900">
+      <div class="absolute inset-0 opacity-30 dark:opacity-20" aria-hidden="true">
+        <div class="absolute -top-24 right-0 h-72 w-72 rounded-full bg-accent blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-industrial blur-3xl"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-24 lg:py-32 grid lg:grid-cols-2 gap-14 items-center">
+        <div data-aos="fade-up">
+          <p class="inline-flex items-center rounded-full border border-blue-200 bg-white/80 px-4 py-2 text-sm font-semibold text-primary shadow-sm dark:border-white/10 dark:bg-white/5 dark:text-accent">
+            APIs, datos y automatización para empresas industriales B2B
+          </p>
+          <h1 class="mt-7 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+            Convierte tus procesos industriales en sistemas que venden, integran y trabajan solos.
+          </h1>
+          <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
+            SAPCAS ayuda a naves, distribuidores industriales, minería, suministros técnicos y fabricantes a digitalizar catálogos, conectar Shopify con ERP y automatizar cuadernos de carga, pedidos, productos y datos operativos sin romper su forma actual de trabajar.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#contacto" class="inline-flex justify-center rounded-xl bg-primary px-6 py-3.5 text-base font-bold text-white shadow-lg hover:bg-blue-800 transition">Quiero revisar mi caso</a>
+            <a href="#soluciones" class="inline-flex justify-center rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-base font-bold text-slate-800 hover:border-primary hover:text-primary transition dark:border-white/15 dark:bg-white/5 dark:text-white dark:hover:text-accent">Ver soluciones</a>
+          </div>
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-slate-600 dark:text-slate-300">
+            <div class="rounded-xl border border-slate-200 bg-white/80 p-4 dark:border-white/10 dark:bg-white/5"><strong class="block text-slate-900 dark:text-white">B2B industrial</strong> Productos técnicos, tarifas, clientes y pedidos.</div>
+            <div class="rounded-xl border border-slate-200 bg-white/80 p-4 dark:border-white/10 dark:bg-white/5"><strong class="block text-slate-900 dark:text-white">ERP friendly</strong> Integramos, no sustituimos lo que ya funciona.</div>
+            <div class="rounded-xl border border-slate-200 bg-white/80 p-4 dark:border-white/10 dark:bg-white/5"><strong class="block text-slate-900 dark:text-white">Dato gobernado</strong> Menos Excel salvaje, más trazabilidad.</div>
+          </div>
+        </div>
+        <div class="relative" data-aos="fade-left" data-aos-delay="150">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-2xl dark:border-white/10 dark:bg-slate-900/80 dark:shadow-soft-glow">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4 dark:border-white/10">
+              <div>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Flujo típico SAPCAS</p>
+                <h2 class="text-xl font-bold">Shopify B2B → API → ERP</h2>
+              </div>
+              <span class="rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-700 dark:bg-green-400/10 dark:text-green-300">controlado</span>
+            </div>
+            <div class="mt-6 space-y-4">
+              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5"><span class="text-2xl">🏭</span><div><h3 class="font-bold">Cliente industrial compra o solicita presupuesto</h3><p class="text-sm text-slate-600 dark:text-slate-300">Catálogo técnico con referencias, familias, marcas, tarifas y reglas B2B.</p></div></div>
+              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5"><span class="text-2xl">🔐</span><div><h3 class="font-bold">La API valida y normaliza</h3><p class="text-sm text-slate-600 dark:text-slate-300">Firma, datos fiscales, cliente, productos, SKU, idempotencia y estados.</p></div></div>
+              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5"><span class="text-2xl">📦</span><div><h3 class="font-bold">Se crea el pedido en el ERP</h3><p class="text-sm text-slate-600 dark:text-slate-300">Cabecera, líneas, validaciones, logs y revisión manual si algo no cuadra.</p></div></div>
+              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5"><span class="text-2xl">📊</span><div><h3 class="font-bold">Datos listos para operar</h3><p class="text-sm text-slate-600 dark:text-slate-300">Automatizaciones de producto, cuadernos de carga, reporting y control.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problema" class="py-20 px-4 sm:px-6 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+        <div data-aos="fade-up">
+          <p class="text-sm font-bold uppercase tracking-widest text-primary dark:text-accent">El problema real</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Muchas empresas industriales venden mucho, pero sus sistemas siguen hablando en idiomas distintos.</h2>
+          <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">El comercial trabaja por WhatsApp, el catálogo vive en Excel, el ERP contiene la verdad fiscal, la web no conoce la tarifa real y cada pedido acaba dependiendo de una persona que copia y pega. Eso no es transformación digital: es una gymkana con casco de obra.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4" data-aos="fade-left">
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold">Catálogos imposibles</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Miles de referencias, marcas, familias, fichas técnicas, imágenes y precios desordenados.</p></div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold">Pedidos manuales</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Datos fiscales, direcciones, teléfonos, IBAN, CCC y líneas que se revisan a mano.</p></div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold">ERP intocable</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">FactuSOL u otro ERP ya está implantado. La clave no es sustituirlo, sino conectarlo bien.</p></div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold">Cero trazabilidad</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Cuando algo falla, nadie sabe si el corte está en Shopify, la API, el ERP o el dato de producto.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="soluciones" class="py-20 px-4 sm:px-6 bg-slate-50 dark:bg-darkBg">
+      <div class="max-w-7xl mx-auto">
+        <div class="max-w-3xl" data-aos="fade-up">
+          <p class="text-sm font-bold uppercase tracking-widest text-primary dark:text-accent">Qué hacemos</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Soluciones concretas para vender y operar mejor en industria.</h2>
+        </div>
+        <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up"><div class="text-3xl">🔌</div><h3 class="mt-4 text-xl font-bold">APIs Shopify ↔ ERP</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Conectores para que pedidos, clientes, productos y estados viajen entre tu tienda B2B y tu ERP con validaciones, logs e idempotencia.</p></article>
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="80"><div class="text-3xl">🧾</div><h3 class="mt-4 text-xl font-bold">Automatización de cuadernos de carga</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Extracción, normalización y generación de documentos operativos para reducir errores y acelerar preparación, almacén y administración.</p></article>
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="160"><div class="text-3xl">🏷️</div><h3 class="mt-4 text-xl font-bold">Datos de producto</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Carga y limpieza de SKUs, familias, fabricantes, fichas técnicas, imágenes, equivalencias y atributos para catálogos industriales.</p></article>
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up"><div class="text-3xl">🛒</div><h3 class="mt-4 text-xl font-bold">Portal B2B industrial</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Shopify adaptado a venta profesional: solicitud de presupuesto, tarifas, clientes, formularios fiscales y experiencia limpia para compras técnicas.</p></article>
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="80"><div class="text-3xl">📈</div><h3 class="mt-4 text-xl font-bold">Reporting y control</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Dashboards y pipelines para entender pedidos, productos con problemas, errores de integración y oportunidades comerciales.</p></article>
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="160"><div class="text-3xl">🧠</div><h3 class="mt-4 text-xl font-bold">IA aplicada a operaciones</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Clasificación de productos, extracción documental, enriquecimiento de catálogos y asistentes internos para soporte comercial o técnico.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="py-20 px-4 sm:px-6 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+          <p class="text-sm font-bold uppercase tracking-widest text-primary dark:text-accent">Cómo implantamos</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Primero entendemos el negocio. Luego automatizamos sin hacer un Frankenstein.</h2>
+        </div>
+        <div class="mt-12 grid md:grid-cols-5 gap-5">
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">01</span><h3 class="mt-3 font-bold">Diagnóstico</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">ERP, tienda, Excel, catálogos, flujos comerciales y dolores reales.</p></div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">02</span><h3 class="mt-3 font-bold">Diseño</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Arquitectura, reglas, datos maestros, seguridad y casos manuales.</p></div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">03</span><h3 class="mt-3 font-bold">MVP</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Conector o automatización inicial con alcance cerrado y medible.</p></div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">04</span><h3 class="mt-3 font-bold">Validación</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Pruebas con pedidos reales, datos reales y errores reales.</p></div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">05</span><h3 class="mt-3 font-bold">Operación</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Soporte, monitorización, mejoras y evolución por fases.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologia" class="py-20 px-4 sm:px-6 bg-slate-50 dark:bg-darkBg">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-up">
+          <p class="text-sm font-bold uppercase tracking-widest text-primary dark:text-accent">Base técnica</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Arquitectura seria, pero explicada para que dirección la entienda.</h2>
+          <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">Diseñamos APIs y pipelines con patrones de ingeniería de datos: seguridad, validación, trazabilidad, despliegue controlado y separación entre lógica de negocio y sistemas externos. Nada de “script mágico en un portátil debajo de la mesa”.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4" data-aos="fade-left">
+          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10"><h3 class="font-bold">Python / FastAPI</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">APIs ligeras, robustas y documentables.</p></div>
+          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10"><h3 class="font-bold">PostgreSQL / SQLite</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Persistencia, idempotencia y auditoría.</p></div>
+          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10"><h3 class="font-bold">GCP / Cloud Run</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Despliegue cloud escalable cuando el proyecto lo necesite.</p></div>
+          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10"><h3 class="font-bold">BigQuery / Data</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Analítica, reporting y gobierno de datos.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-nosotros" class="py-20 px-4 sm:px-6 bg-white dark:bg-slate-950">
+      <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+        <p class="text-sm font-bold uppercase tracking-widest text-primary dark:text-accent">Quién hay detrás</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">SAPCAS nace mezclando negocio, ingeniería de datos y calle industrial.</h2>
+        <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">Nuestro enfoque combina experiencia en arquitecturas cloud, datos, automatización e integraciones con el conocimiento práctico de proyectos B2B reales. Hablamos con dirección, entendemos al equipo operativo y bajamos la solución a algo implantable.</p>
+      </div>
+      <div class="mt-10 max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl border border-slate-200 p-7 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold text-xl">Mentalidad consultora</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Antes de vender tecnología, entendemos proceso, coste, riesgo y retorno.</p></div>
+        <div class="rounded-3xl border border-slate-200 p-7 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold text-xl">Ejecución técnica</h3><p class="mt-3 text-slate-600 dark:text-slate-300">APIs, datos, cloud, automatización y documentación para mantenerlo vivo.</p></div>
+        <div class="rounded-3xl border border-slate-200 p-7 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold text-xl">Foco industrial</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Sectores con producto complejo, mucho catálogo y alto potencial B2B.</p></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-20 px-4 sm:px-6 bg-primary text-white">
+      <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl font-black tracking-tight">¿Tienes una nave, catálogo industrial o ERP que necesita respirar?</h2>
+        <p class="mt-5 text-lg text-blue-100 leading-relaxed">Cuéntanos qué vendes, qué ERP usas y qué proceso te está robando más horas. Te devolvemos un diagnóstico claro: qué automatizar primero, cuánto esfuerzo tiene y qué retorno puede darte.</p>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+          <a href="mailto:sapcasmicroservice@gmail.com?subject=Diagnóstico%20SAPCAS%20Industria&body=Hola%20SAPCAS,%0A%0AQuiero%20revisar%20un%20caso%20de%20automatización%20industrial.%0A%0AEmpresa:%0AERP%20actual:%0AQué%20queremos%20automatizar:%0A" class="inline-flex justify-center rounded-xl bg-white px-6 py-3.5 text-base font-bold text-primary shadow-lg hover:bg-blue-50 transition">Escribir a SAPCAS</a>
+          <a href="#soluciones" class="inline-flex justify-center rounded-xl border border-white/40 px-6 py-3.5 text-base font-bold text-white hover:bg-white/10 transition">Revisar servicios</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 bg-slate-100 text-center text-slate-600 dark:bg-slate-950 dark:text-slate-400">
+    <p>&copy; 2026 SAPCAS Microservices. APIs, automatización y datos para industria B2B.</p>
+  </footer>
+
+  <script>
+    AOS.init({ once: true, duration: 650 });
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeThumb = document.getElementById('theme-toggle-thumb');
+    const iconSun = themeToggleBtn.querySelector('span:first-child');
+    const iconMoon = themeToggleBtn.querySelector('span:nth-child(2)');
+
+    const updateToggle = () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      themeThumb.style.transform = isDark ? 'translateX(24px)' : 'translateX(0)';
+      iconSun.style.opacity = isDark ? '1' : '0.45';
+      iconMoon.style.opacity = isDark ? '0.45' : '1';
+    };
+
+    themeToggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      updateToggle();
+    });
+
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+    }
+    updateToggle();
+  </script>
+</body>
+</html>
