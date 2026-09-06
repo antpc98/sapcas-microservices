@@ -35,10 +35,20 @@
 
   <header class="fixed top-0 w-full z-50 border-b border-slate-200/70 bg-white/90 shadow-sm backdrop-blur dark:border-white/10 dark:bg-darkBg/90 dark:shadow-white-glow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center gap-4">
-      <a href="#inicio" class="flex items-center gap-2 text-xl font-extrabold tracking-tight" aria-label="SAPCAS inicio">
-        <span class="bg-primary text-white px-2.5 py-1 rounded-lg">SAPCAS</span>
-        <span class="hidden sm:inline text-slate-900 dark:text-white">Microservices</span>
+      <a href="#inicio"
+         class="group flex min-w-0 items-center rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 dark:focus-visible:ring-offset-darkBg"
+         aria-label="SAPCAS Microservices - Inicio">
+        <span class="flex items-center rounded-xl bg-white/95 px-2 py-1 shadow-sm ring-1 ring-slate-200/80 transition group-hover:shadow-md dark:ring-white/10">
+          <img
+            src="./logo.svg"
+            alt="SAPCAS Microservices"
+            width="560"
+            height="128"
+            class="h-9 w-auto max-w-[158px] sm:h-10 sm:max-w-[190px] md:max-w-[210px]"
+          />
+        </span>
       </a>
+
       <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600 dark:text-slate-300">
         <a href="#problema" class="hover:text-primary dark:hover:text-accent">Problema</a>
         <a href="#soluciones" class="hover:text-primary dark:hover:text-accent">Soluciones</a>
@@ -46,6 +56,7 @@
         <a href="#tecnologia" class="hover:text-primary dark:hover:text-accent">Tecnología</a>
         <a href="#contacto" class="hover:text-primary dark:hover:text-accent">Contacto</a>
       </nav>
+
       <div class="flex items-center gap-3">
         <a href="#contacto" class="hidden sm:inline-flex rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white shadow hover:bg-blue-800 transition">Solicitar diagnóstico</a>
         <button id="theme-toggle" aria-label="Cambiar modo claro u oscuro" class="relative w-14 h-8 bg-slate-200 dark:bg-slate-700 rounded-full p-1 flex items-center justify-center transition-colors duration-300">
@@ -63,27 +74,42 @@
         <div class="absolute -top-24 right-0 h-72 w-72 rounded-full bg-accent blur-3xl"></div>
         <div class="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-industrial blur-3xl"></div>
       </div>
+
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-24 lg:py-32 grid lg:grid-cols-2 gap-14 items-center">
         <div data-aos="fade-up">
           <p class="inline-flex items-center rounded-full border border-blue-200 bg-white/80 px-4 py-2 text-sm font-semibold text-primary shadow-sm dark:border-white/10 dark:bg-white/5 dark:text-accent">
             IA, automatización y datos para modernizar empresas
           </p>
+
           <h1 class="mt-7 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
             Moderniza tu empresa con sistemas que automatizan, conectan datos y ayudan a decidir mejor.
           </h1>
+
           <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
             SAPCAS Microservices ayuda a empresas que quieren avanzar sin asumir proyectos eternos ni soluciones sobredimensionadas. Aplicamos inteligencia artificial, automatización e ingeniería de datos para eliminar tareas manuales, conectar herramientas y convertir procesos dispersos en sistemas fiables, medibles y fáciles de mantener.
           </p>
+
           <div class="mt-8 flex flex-col sm:flex-row gap-4">
             <a href="#contacto" class="inline-flex justify-center rounded-xl bg-primary px-6 py-3.5 text-base font-bold text-white shadow-lg hover:bg-blue-800 transition">Quiero revisar mi caso</a>
             <a href="#soluciones" class="inline-flex justify-center rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-base font-bold text-slate-800 hover:border-primary hover:text-primary transition dark:border-white/15 dark:bg-white/5 dark:text-white dark:hover:text-accent">Ver soluciones</a>
           </div>
+
           <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-slate-600 dark:text-slate-300">
-            <div class="rounded-xl border border-slate-200 bg-white/80 p-4 dark:border-white/10 dark:bg-white/5"><strong class="block text-slate-900 dark:text-white">Experiencia real</strong> 7 años trabajando con datos e IA en energía, banca, telecomunicaciones e industria.</div>
-            <div class="rounded-xl border border-slate-200 bg-white/80 p-4 dark:border-white/10 dark:bg-white/5"><strong class="block text-slate-900 dark:text-white">Sin romper lo útil</strong> Integramos y mejoramos lo que ya funciona antes de proponer sustituirlo.</div>
-            <div class="rounded-xl border border-slate-200 bg-white/80 p-4 dark:border-white/10 dark:bg-white/5"><strong class="block text-slate-900 dark:text-white">Calidad y garantía</strong> Soluciones documentadas, trazables, probadas y preparadas para mantenerse.</div>
+            <div class="rounded-xl border border-slate-200 bg-white/80 p-4 dark:border-white/10 dark:bg-white/5">
+              <strong class="block text-slate-900 dark:text-white">Experiencia real</strong>
+              7 años trabajando con datos e IA en energía, banca, telecomunicaciones e industria.
+            </div>
+            <div class="rounded-xl border border-slate-200 bg-white/80 p-4 dark:border-white/10 dark:bg-white/5">
+              <strong class="block text-slate-900 dark:text-white">Sin romper lo útil</strong>
+              Integramos y mejoramos lo que ya funciona antes de proponer sustituirlo.
+            </div>
+            <div class="rounded-xl border border-slate-200 bg-white/80 p-4 dark:border-white/10 dark:bg-white/5">
+              <strong class="block text-slate-900 dark:text-white">Calidad y garantía</strong>
+              Soluciones documentadas, trazables, probadas y preparadas para mantenerse.
+            </div>
           </div>
         </div>
+
         <div class="relative" data-aos="fade-left" data-aos-delay="150">
           <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-2xl dark:border-white/10 dark:bg-slate-900/80 dark:shadow-soft-glow">
             <div class="flex items-center justify-between border-b border-slate-200 pb-4 dark:border-white/10">
@@ -93,11 +119,39 @@
               </div>
               <span class="rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-700 dark:bg-green-400/10 dark:text-green-300">controlado</span>
             </div>
+
             <div class="mt-6 space-y-4">
-              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5"><span class="text-2xl">🏭</span><div><h3 class="font-bold">Detectamos el proceso que frena al equipo</h3><p class="text-sm text-slate-600 dark:text-slate-300">Tareas repetitivas, documentos, correos, sistemas aislados o decisiones sin datos.</p></div></div>
-              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5"><span class="text-2xl">🔐</span><div><h3 class="font-bold">Diseñamos una solución útil y segura</h3><p class="text-sm text-slate-600 dark:text-slate-300">IA, APIs, integraciones y reglas de negocio adaptadas al funcionamiento real de la empresa.</p></div></div>
-              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5"><span class="text-2xl">📦</span><div><h3 class="font-bold">Automatizamos con control humano</h3><p class="text-sm text-slate-600 dark:text-slate-300">Validaciones, alertas, registros y revisión manual cuando una decisión lo requiere.</p></div></div>
-              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5"><span class="text-2xl">📊</span><div><h3 class="font-bold">La empresa gana tiempo y visibilidad</h3><p class="text-sm text-slate-600 dark:text-slate-300">Menos errores, menos dependencia manual y más información para operar y crecer.</p></div></div>
+              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5">
+                <span class="text-2xl">🏭</span>
+                <div>
+                  <h3 class="font-bold">Detectamos el proceso que frena al equipo</h3>
+                  <p class="text-sm text-slate-600 dark:text-slate-300">Tareas repetitivas, documentos, correos, sistemas aislados o decisiones sin datos.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5">
+                <span class="text-2xl">🔐</span>
+                <div>
+                  <h3 class="font-bold">Diseñamos una solución útil y segura</h3>
+                  <p class="text-sm text-slate-600 dark:text-slate-300">IA, APIs, integraciones y reglas de negocio adaptadas al funcionamiento real de la empresa.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5">
+                <span class="text-2xl">📦</span>
+                <div>
+                  <h3 class="font-bold">Automatizamos con control humano</h3>
+                  <p class="text-sm text-slate-600 dark:text-slate-300">Validaciones, alertas, registros y revisión manual cuando una decisión lo requiere.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 rounded-2xl bg-slate-50 p-4 dark:bg-white/5">
+                <span class="text-2xl">📊</span>
+                <div>
+                  <h3 class="font-bold">La empresa gana tiempo y visibilidad</h3>
+                  <p class="text-sm text-slate-600 dark:text-slate-300">Menos errores, menos dependencia manual y más información para operar y crecer.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -111,11 +165,24 @@
           <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Muchas empresas saben que deben modernizarse, pero la tecnología suele llegarles tarde, cara o mal explicada.</h2>
           <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">Los datos viven repartidos entre Excel, correo, WhatsApp, ERPs y aplicaciones que no se entienden entre sí. El equipo pierde horas copiando información, corrigiendo errores y dependiendo de personas concretas. Eso no es falta de capacidad: es una empresa trabajando con herramientas que ya se le han quedado pequeñas.</p>
         </div>
+
         <div class="grid sm:grid-cols-2 gap-4" data-aos="fade-left">
-          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold">Procesos manuales</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Tareas repetitivas que consumen tiempo, generan errores y frenan al equipo.</p></div>
-          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold">Herramientas desconectadas</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">ERP, CRM, hojas de cálculo, correo y aplicaciones sin un flujo común.</p></div>
-          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold">Datos poco aprovechados</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">La información existe, pero no llega limpia, a tiempo ni en una forma útil para decidir.</p></div>
-          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold">IA sin estrategia</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Herramientas de moda implantadas sin seguridad, calidad, objetivos claros ni retorno medible.</p></div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5">
+            <h3 class="font-bold">Procesos manuales</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Tareas repetitivas que consumen tiempo, generan errores y frenan al equipo.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5">
+            <h3 class="font-bold">Herramientas desconectadas</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">ERP, CRM, hojas de cálculo, correo y aplicaciones sin un flujo común.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5">
+            <h3 class="font-bold">Datos poco aprovechados</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">La información existe, pero no llega limpia, a tiempo ni en una forma útil para decidir.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5">
+            <h3 class="font-bold">IA sin estrategia</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Herramientas de moda implantadas sin seguridad, calidad, objetivos claros ni retorno medible.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -126,13 +193,43 @@
           <p class="text-sm font-bold uppercase tracking-widest text-primary dark:text-accent">Qué hacemos</p>
           <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Soluciones concretas para que una empresa trabaje mejor, decida mejor y crezca con control.</h2>
         </div>
+
         <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up"><div class="text-3xl">🔌</div><h3 class="mt-4 text-xl font-bold">Integración de sistemas y APIs</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Conectamos ERP, CRM, ecommerce, aplicaciones internas y servicios cloud para que la información circule con validaciones, seguridad y trazabilidad.</p></article>
-          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="80"><div class="text-3xl">🧾</div><h3 class="mt-4 text-xl font-bold">Automatización de procesos</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Automatizamos tareas administrativas, operativas y comerciales: documentos, correos, validaciones, cargas, conciliaciones, avisos y flujos internos.</p></article>
-          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="160"><div class="text-3xl">🏷️</div><h3 class="mt-4 text-xl font-bold">Ingeniería y calidad de datos</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Ordenamos, limpiamos y conectamos datos para crear una base fiable de reporting, analítica, automatización e inteligencia artificial.</p></article>
-          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up"><div class="text-3xl">🛒</div><h3 class="mt-4 text-xl font-bold">Aplicaciones y portales internos</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Creamos herramientas sencillas para clientes y equipos: portales, formularios, paneles operativos y soluciones a medida sin complejidad innecesaria.</p></article>
-          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="80"><div class="text-3xl">📈</div><h3 class="mt-4 text-xl font-bold">Reporting y control operativo</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Dashboards y pipelines para entender actividad, costes, incidencias, rendimiento y oportunidades con datos actualizados y comprensibles.</p></article>
-          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="160"><div class="text-3xl">🧠</div><h3 class="mt-4 text-xl font-bold">IA aplicada con sentido</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Asistentes internos, extracción documental, clasificación, búsqueda inteligente y apoyo a decisiones, siempre con control, privacidad y un caso de uso claro.</p></article>
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up">
+            <div class="text-3xl">🔌</div>
+            <h3 class="mt-4 text-xl font-bold">Integración de sistemas y APIs</h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Conectamos ERP, CRM, ecommerce, aplicaciones internas y servicios cloud para que la información circule con validaciones, seguridad y trazabilidad.</p>
+          </article>
+
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="80">
+            <div class="text-3xl">🧾</div>
+            <h3 class="mt-4 text-xl font-bold">Automatización de procesos</h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Automatizamos tareas administrativas, operativas y comerciales: documentos, correos, validaciones, cargas, conciliaciones, avisos y flujos internos.</p>
+          </article>
+
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="160">
+            <div class="text-3xl">🏷️</div>
+            <h3 class="mt-4 text-xl font-bold">Ingeniería y calidad de datos</h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Ordenamos, limpiamos y conectamos datos para crear una base fiable de reporting, analítica, automatización e inteligencia artificial.</p>
+          </article>
+
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up">
+            <div class="text-3xl">🛒</div>
+            <h3 class="mt-4 text-xl font-bold">Aplicaciones y portales internos</h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Creamos herramientas sencillas para clientes y equipos: portales, formularios, paneles operativos y soluciones a medida sin complejidad innecesaria.</p>
+          </article>
+
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="80">
+            <div class="text-3xl">📈</div>
+            <h3 class="mt-4 text-xl font-bold">Reporting y control operativo</h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Dashboards y pipelines para entender actividad, costes, incidencias, rendimiento y oportunidades con datos actualizados y comprensibles.</p>
+          </article>
+
+          <article class="rounded-3xl bg-white p-7 shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-white/10" data-aos="fade-up" data-aos-delay="160">
+            <div class="text-3xl">🧠</div>
+            <h3 class="mt-4 text-xl font-bold">IA aplicada con sentido</h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Asistentes internos, extracción documental, clasificación, búsqueda inteligente y apoyo a decisiones, siempre con control, privacidad y un caso de uso claro.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -143,12 +240,33 @@
           <p class="text-sm font-bold uppercase tracking-widest text-primary dark:text-accent">Cómo implantamos</p>
           <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Primero entendemos el negocio. Luego automatizamos sin hacer un Frankenstein.</h2>
         </div>
+
         <div class="mt-12 grid md:grid-cols-5 gap-5">
-          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">01</span><h3 class="mt-3 font-bold">Diagnóstico</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Procesos, herramientas, datos, riesgos y problemas que realmente cuestan tiempo o dinero.</p></div>
-          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">02</span><h3 class="mt-3 font-bold">Diseño</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Arquitectura, reglas, seguridad, calidad, responsables y excepciones manuales.</p></div>
-          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">03</span><h3 class="mt-3 font-bold">MVP</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Primera solución útil con alcance cerrado, coste controlado y resultado medible.</p></div>
-          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">04</span><h3 class="mt-3 font-bold">Validación</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Pruebas con datos y situaciones reales antes de poner nada crítico en producción.</p></div>
-          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5"><span class="text-sm font-black text-primary dark:text-accent">05</span><h3 class="mt-3 font-bold">Operación</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Soporte, monitorización, documentación, garantía y evolución por fases.</p></div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5">
+            <span class="text-sm font-black text-primary dark:text-accent">01</span>
+            <h3 class="mt-3 font-bold">Diagnóstico</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Procesos, herramientas, datos, riesgos y problemas que realmente cuestan tiempo o dinero.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5">
+            <span class="text-sm font-black text-primary dark:text-accent">02</span>
+            <h3 class="mt-3 font-bold">Diseño</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Arquitectura, reglas, seguridad, calidad, responsables y excepciones manuales.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5">
+            <span class="text-sm font-black text-primary dark:text-accent">03</span>
+            <h3 class="mt-3 font-bold">MVP</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Primera solución útil con alcance cerrado, coste controlado y resultado medible.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5">
+            <span class="text-sm font-black text-primary dark:text-accent">04</span>
+            <h3 class="mt-3 font-bold">Validación</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Pruebas con datos y situaciones reales antes de poner nada crítico en producción.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-5 dark:border-white/10 dark:bg-white/5">
+            <span class="text-sm font-black text-primary dark:text-accent">05</span>
+            <h3 class="mt-3 font-bold">Operación</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Soporte, monitorización, documentación, garantía y evolución por fases.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -160,11 +278,24 @@
           <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Tecnología seria, explicada con claridad y construida para durar.</h2>
           <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">Aplicamos prácticas de ingeniería utilizadas en entornos exigentes de energía, banca, telecomunicaciones e industria: seguridad, validación, trazabilidad, despliegues controlados, monitorización y documentación. La empresa recibe una solución profesional, no un experimento brillante que solo entiende quien lo programó.</p>
         </div>
+
         <div class="grid sm:grid-cols-2 gap-4" data-aos="fade-left">
-          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10"><h3 class="font-bold">Python / FastAPI</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">APIs, automatizaciones y servicios mantenibles.</p></div>
-          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10"><h3 class="font-bold">PostgreSQL / SQLite</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Persistencia, control de estados y auditoría.</p></div>
-          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10"><h3 class="font-bold">GCP / Cloud Run</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Despliegue seguro y escalable según la necesidad real.</p></div>
-          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10"><h3 class="font-bold">BigQuery / Data</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Analítica, reporting, calidad y gobierno del dato.</p></div>
+          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10">
+            <h3 class="font-bold">Python / FastAPI</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">APIs, automatizaciones y servicios mantenibles.</p>
+          </div>
+          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10">
+            <h3 class="font-bold">PostgreSQL / SQLite</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Persistencia, control de estados y auditoría.</p>
+          </div>
+          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10">
+            <h3 class="font-bold">GCP / Cloud Run</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Despliegue seguro y escalable según la necesidad real.</p>
+          </div>
+          <div class="rounded-2xl bg-white p-5 border border-slate-200 dark:bg-slate-900 dark:border-white/10">
+            <h3 class="font-bold">BigQuery / Data</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Analítica, reporting, calidad y gobierno del dato.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -175,10 +306,22 @@
         <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">SAPCAS Microservices nace para acercar tecnología de nivel profesional a empresas que no quieren quedarse atrás.</h2>
         <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">Detrás de SAPCAS hay 7 años de experiencia en datos e inteligencia artificial trabajando en sectores exigentes como energía, banca, telecomunicaciones e industria. Ese conocimiento se transforma en soluciones cercanas y realistas para empresas: entendemos el negocio, hablamos con las personas que usan el proceso y construimos algo que pueda implantarse, medirse y mantenerse.</p>
       </div>
+
       <div class="mt-10 max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
-        <div class="rounded-3xl border border-slate-200 p-7 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold text-xl">Mentalidad consultora</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Antes de proponer tecnología, entendemos el proceso, el coste, el riesgo y el retorno esperado.</p></div>
-        <div class="rounded-3xl border border-slate-200 p-7 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold text-xl">Ejecución técnica</h3><p class="mt-3 text-slate-600 dark:text-slate-300">IA, APIs, datos, cloud, automatización, pruebas y documentación para mantener cada solución viva.</p></div>
-        <div class="rounded-3xl border border-slate-200 p-7 dark:border-white/10 dark:bg-white/5"><h3 class="font-bold text-xl">Compromiso con la empresa</h3><p class="mt-3 text-slate-600 dark:text-slate-300">Proyectos por fases, comunicación clara, calidad técnica y acompañamiento después de la entrega.</p></div>
+        <div class="rounded-3xl border border-slate-200 p-7 dark:border-white/10 dark:bg-white/5">
+          <h3 class="font-bold text-xl">Mentalidad consultora</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">Antes de proponer tecnología, entendemos el proceso, el coste, el riesgo y el retorno esperado.</p>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 p-7 dark:border-white/10 dark:bg-white/5">
+          <h3 class="font-bold text-xl">Ejecución técnica</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">IA, APIs, datos, cloud, automatización, pruebas y documentación para mantener cada solución viva.</p>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 p-7 dark:border-white/10 dark:bg-white/5">
+          <h3 class="font-bold text-xl">Compromiso con la empresa</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">Proyectos por fases, comunicación clara, calidad técnica y acompañamiento después de la entrega.</p>
+        </div>
       </div>
     </section>
 
@@ -186,6 +329,7 @@
       <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
         <h2 class="text-3xl sm:text-4xl font-black tracking-tight">¿Tu empresa necesita modernizarse, pero no sabes por dónde empezar?</h2>
         <p class="mt-5 text-lg text-blue-100 leading-relaxed">Cuéntanos qué proceso te roba más tiempo, qué herramientas utilizas y dónde se producen los errores. Recibirás una primera valoración clara sobre qué mejorar, qué automatizar primero y cómo hacerlo sin poner en riesgo la operativa.</p>
+
         <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sapcasmicroservice@gmail.com&su=Diagn%C3%B3stico%20SAPCAS%20Microservices&body=Hola%20SAPCAS%2C%0A%0AQuiero%20revisar%20un%20caso%20de%20automatizaci%C3%B3n%2C%20datos%20o%20IA.%0A%0AEmpresa%3A%0AHerramientas%20actuales%3A%0AProceso%20o%20problema%20a%20mejorar%3A%0A" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center rounded-xl bg-white px-6 py-3.5 text-base font-bold text-primary shadow-lg hover:bg-blue-50 transition">Escribir a SAPCAS</a>
           <a href="#soluciones" class="inline-flex justify-center rounded-xl border border-white/40 px-6 py-3.5 text-base font-bold text-white hover:bg-white/10 transition">Revisar servicios</a>
@@ -200,6 +344,7 @@
 
   <script>
     AOS.init({ once: true, duration: 650 });
+
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeThumb = document.getElementById('theme-toggle-thumb');
     const iconSun = themeToggleBtn.querySelector('span:first-child');
@@ -223,6 +368,7 @@
     } else {
       document.documentElement.classList.add('dark');
     }
+
     updateToggle();
   </script>
 </body>
